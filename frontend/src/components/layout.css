@@ -1,0 +1,214 @@
+/*src/components/layout.css*/
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pagewrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+body {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  background: #f9f9f9;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  height: 4em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+h1 {
+  font-size: clamp(0.8em, 2.5vw, 2em);
+}
+
+header ul {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+header a {
+  text-transform: capitalize;
+  font-size: clamp(0.8em, 2vw, 1.2em);
+}
+
+.hero {
+  height: 12em;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.hero h2 {
+  text-wrap: balance;
+}
+
+.pageTitle {
+  color: hsl(250, 92%, 60%);
+  text-transform: capitalize;
+}
+
+.postlist {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5em;
+  row-gap: 3em;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media (max-width: 960px) {
+  .postlist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .postlist {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.postlist h3 {
+  font-size: clamp(0.8em, 1.5vw, 1.5em);
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.postlist li {
+  overflow: hidden;
+  border-radius: 1em;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 15em;
+  padding: 1em 0;
+}
+
+.postlist .cover {
+  height: 12em;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-wrap {
+  position: relative;
+}
+
+.postlist .avatar {
+  object-fit: cover;
+  position: absolute;
+  right: 2%;
+  bottom: -10%;
+  border-radius: 9999px;
+  width: 3em;
+  height: 3em;
+}
+
+.postlist p {
+  padding-left: 0.5em;
+}
+
+.date,
+.name,
+.postcategory {
+  font-size: 0.8em;
+}
+
+.postcategory {
+  color: hsl(250, 92%, 60%);
+}
+
+.description {
+  padding-top: 1em;
+  font-size: clamp(0.7em, 1.25vw, 1em);
+}
+
+.postcover {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 3em;
+  padding: 0.5em;
+  background-color: hsl(250, 92%, 10%);
+  color: hsl(250, 92%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.postcover,
+.postdate,
+.postauthor,
+.postcategory,
+.postcontent p {
+  padding-bottom: 1em;
+}
+
+.postdate,
+.postauthor {
+  font-size: clamp(0.6em, 1.2vw, 1.2em);
+}
+
+.postavatar {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer h2 {
+  font-size: clamp(0.5em, 1vw, 1em);
+}
+
+footer p {
+  font-size: clamp(0.4em, 0.8vw, 0.8em);
+  font-weight: 400;
+}
