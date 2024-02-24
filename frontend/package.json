@@ -20,5 +20,8 @@
     "gatsby-transformer-remark": "^6.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.29.0"
   }
 }

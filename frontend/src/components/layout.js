@@ -18,7 +18,9 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div class="pagewrapper">
       <header>
-        <h1>Strapi Gatsby Blog</h1>
+        <Link to="/">
+          <h1>Strapi Gatsby Blog</h1>
+        </Link>
         <ul>
           <li>
             <Link to="/">Home</Link>
