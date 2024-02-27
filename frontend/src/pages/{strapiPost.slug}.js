@@ -7,13 +7,13 @@ const BlogPost = ({ data }) => {
     <Layout pageTitle={data.strapiPost.title}>
       <img
         class="postcover"
-        src={data.strapiPost.cover}
+        src={data.strapiPost.cover_img.url}
         alt={`Cover for ${data.strapiPost.title}`}
       />
       <p class="postdate">{data.strapiPost.date}</p>
       <img
         class="postavatar"
-        src={data.strapiPost.author.avatar}
+        src={data.strapiPost.author.avatar_img.url}
         alt={`Avatar for${data.strapiPost.author.name}`}
       />
       <p class="postauthor">Written by {data.strapiPost.author.name}</p>
@@ -36,7 +36,9 @@ export const query = graphql`
   query ($id: String) {
     strapiPost(id: { eq: $id }) {
       author {
-        avatar
+        avatar_img {
+          url
+        }
         name
       }
       category {
@@ -50,7 +52,9 @@ export const query = graphql`
           }
         }
       }
-      cover
+      cover_img {
+        url
+      }
       date(formatString: "MMMM D, YYYY")
       description
       slug
