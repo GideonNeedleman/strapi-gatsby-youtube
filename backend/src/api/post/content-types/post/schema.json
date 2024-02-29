@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post"
+    "displayName": "Post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,9 +19,6 @@
     },
     "description": {
       "type": "text"
-    },
-    "cover": {
-      "type": "string"
     },
     "content": {
       "type": "richtext"
@@ -43,6 +41,17 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "posts"
+    },
+    "cover_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

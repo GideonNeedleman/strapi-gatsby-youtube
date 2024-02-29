@@ -14,6 +14,7 @@
     "@strapi/plugin-graphql": "^4.20.1",
     "@strapi/plugin-i18n": "4.20.1",
     "@strapi/plugin-users-permissions": "4.20.1",
+    "@strapi/provider-upload-cloudinary": "^4.20.2",
     "@strapi/strapi": "4.20.1",
     "better-sqlite3": "8.6.0",
     "react": "^18.0.0",

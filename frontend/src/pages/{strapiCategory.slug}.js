@@ -14,12 +14,12 @@ const Category = ({ data }) => {
             <div class="image-wrap">
               <img
                 class="cover"
-                src={post.cover}
+                src={post.cover_img.url}
                 alt={`Cover for ${post.title}`}
               />
               <img
                 class="avatar"
-                src={post.author.avatar}
+                src={post.author.avatar_img.url}
                 alt={`Avatar for${post.author.name}`}
               />
             </div>
@@ -38,10 +38,14 @@ export const query = graphql`
     strapiCategory(id: { eq: $id }) {
       posts {
         author {
-          avatar
+          avatar_img {
+            url
+          }
           name
         }
-        cover
+        cover_img {
+          url
+        }
         date(formatString: "MMMM D, YYYY")
         description
         slug

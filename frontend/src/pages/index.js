@@ -15,12 +15,12 @@ const IndexPage = ({ data }) => {
             <div class="image-wrap">
               <img
                 class="cover"
-                src={`${node.cover}`}
+                src={`${node.cover_img.url}`}
                 alt={`Cover for ${node.title}`}
               />
               <img
                 class="avatar"
-                src={`${node.author.avatar}`}
+                src={`${node.author.avatar_img.url}`}
                 alt={`Avatar for${node.author.name}`}
               />
             </div>
@@ -44,10 +44,14 @@ export const query = graphql`
     allStrapiPost(sort: { date: DESC }) {
       nodes {
         author {
-          avatar
+          avatar_img {
+            url
+          }
           name
         }
-        cover
+        cover_img {
+          url
+        }
         date(formatString: "MMMM D, YYYY")
         description
         id
