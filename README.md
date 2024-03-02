@@ -52,6 +52,6 @@ Finally save. Now any unauthenticated, public user can query Strapi for your con
 
 ### GraphQL Plugin
 
-To [install the GraphQL plugin](https://market.strapi.io/plugins/@strapi-plugin-graphql) run `npm install @strapi/plugin-graphql`
+To [install the GraphQL plugin](https://market.strapi.io/plugins/@strapi-plugin-graphql) run `npm install @strapi/plugin-graphql` inside your `backend` folder.
 
 Now when you run your Strapi server, you can go to `http://localhost:1337/graphql` to access the graphql playground and experiment with running queries.
