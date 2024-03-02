@@ -87,7 +87,7 @@ Replace the text fields currently used to hold the URLs for author avatar and po
 
 Now we need to update the graphql queries in our Gatsby code to grab the newly uploaded image urls. By experimenting around with the GraphiQL playground, you can see that you can query for the new image urls using a format like:
 
-```json
+```js
 allStrapiPost {
       nodes {
         author {
