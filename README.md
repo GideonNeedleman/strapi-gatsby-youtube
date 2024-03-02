@@ -89,13 +89,13 @@ Now we need to update the graphql queries in our Gatsby code to grab the newly u
 
 ```js
 allStrapiPost {
-      nodes {
-        author {
-          avatar_img {
-            url
-          }
-        }
+  nodes {
+    author {
+      avatar_img {
+        url
       }
+    }
+  }
 }
 ```
 
