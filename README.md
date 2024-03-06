@@ -1,4 +1,4 @@
-#Building & Deploying a Static Blog with Gatsby and Strapi for Free
+# Building & Deploying a Static Blog with Gatsby and Strapi for Free
 
 Strapi is a headless Content Management System (CMS) that will function as the backend to our blog. You can login to Strapi through an Admin panel and add all of your blog post, author and category content. Strapi then makes this content data available through an API that you can grab with the frontend of your choice.
 
