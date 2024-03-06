@@ -6,6 +6,8 @@ Gatsby is a frontend React framework that we will use to query the Strapi conten
 
 We will investigate free options to deploy both Strapi and Gatsby with online services so that users can add content and view the final blog.
 
+## Update to PostgreSQL Database
+
 ### Test Migrate Data
 
 Use Strapi's [Data Transfer](https://docs.strapi.io/dev-docs/data-management/transfer) ability to migrate data from local SQLite db to deployed SQLite db.
